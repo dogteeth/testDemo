@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        }
+
+        .questionAnswerSec {
+            width:100%;
+            height:100vh;
+            display: grid;
+            place-content: center;
+        }
+
+        .testBoard {
+            width:90vw;
+            padding:1rem;
+            background-color: white;
+            border:solid 5px black;
+        }
+
+        .questionTitle {
+            margin-bottom:1rem;
+            text-align: center;
+        }
+
+        .chooseAnswers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:1rem;
+        }
+
+        .answerCard{
+            border:solid 5px black;
+            height: 200px;
+            display: grid;
+            place-content: center;
+            background-color: grey;
+        }
+
+        .controller {
+            padding-top:1rem;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .btn {
+            width:60px;
+            height:60px;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            background-color: black;
+            color:white;
+        }
+
+        .restartBTN {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="questionAnswerSec">
+    <div class="testBoard">
+        <!-- question/answer area -->
+        <div class="testCard">
+            <h2 class="questionTitle">香蕉是什麼顏色?</h2>
+            <div class="chooseAnswers">
+                <div class="answer01 answerCard"><h3>黃色</h3></div>
+                <div class="answer02 answerCard"><h3>紅色</h3></div>
+            </div>
+        </div>  
+        <!--controller  -->
+        <div class="controller">
+            <div class="nextBTN btn">NEXT</div>
+            <div class="restartBTN btn">重新來過</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
